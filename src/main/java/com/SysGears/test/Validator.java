@@ -15,10 +15,9 @@ public class Validator {
             System.out.println(message);
             parameter = reader.readLine();
             if (base.contains(parameter)){
-                System.out.println("Poidet");
                 break;
             } else if (parameter.equals("exit")) System.exit(0);
-            else System.out.println("Nevernoie znachenie");
+            else System.out.println("Incorrect value");
         }
     }
     public void validConvert_to(String message, List<String> base) throws IOException {
@@ -26,10 +25,9 @@ public class Validator {
             System.out.println(message);
             parameter2 = reader.readLine();
             if (base.contains(parameter2) && !parameter.equals(parameter2) ){
-                System.out.println("Poidet");
                 break;
             } else if (parameter2.equals("exit")) System.exit(0);
-            else System.out.println("Nevernoie znachenie");
+            else System.out.println("Incorrect value");
         }
     }
     public void validValue(String message) throws IOException {
@@ -44,10 +42,9 @@ public class Validator {
                 isNumber = false;
             }
             if (isNumber && Integer.valueOf(value) > 0){
-                System.out.println("Poidet");
                 break;
             } else if (value.equals("exit")) System.exit(0);
-            else System.out.println("Nevernoie znachenie");
+            else System.out.println("Incorrect value");
     }
 
 
