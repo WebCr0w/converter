@@ -1,0 +1,65 @@
+{
+  "dist": [
+    {
+      "unit": "m",
+      "value": 0.5,
+      "convert_to": "ft"
+    },
+    {
+      "unit": "m",
+      "value": 100,
+      "convert_to": "cm"
+    },
+    {
+      "unit": "m",
+      "value": 39.37,
+      "convert_to": "in"
+    },
+    {
+      "unit": "ft",
+      "value": 0.3048,
+      "convert_to": "m"
+    },
+    {
+      "unit": "ft",
+      "value": 30.48,
+      "convert_to": "сm"
+    },
+    {
+      "unit": "ft",
+      "value": 12,
+      "convert_to": "in"
+    },
+    {
+      "unit": "cm",
+      "value": 0.01,
+      "convert_to": "m"
+    },
+    {
+      "unit": "cm",
+      "value": 0.393701,
+      "convert_to": "in"
+    },
+    {
+      "unit": "cm",
+      "value": 0.0328084,
+      "convert_to": "ft"
+    },
+    {
+      "unit": "in",
+      "value": 0.0254,
+      "convert_to": "m"
+    },
+    {
+      "unit": "in",
+      "value": 0.083333336,
+      "convert_to": "ft"
+    },
+    {
+      "unit": "in",
+      "value": 2.54,
+      "convert_to": "cm"
+    }
+  ],
+  "avalibleUnits": ["m", "ft", "cm", "in"]
+}
