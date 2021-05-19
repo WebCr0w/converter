@@ -3,11 +3,10 @@ package com.SysGears.test;
 
 import com.google.gson.Gson;
 
-import java.io.BufferedReader;
+
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.Arrays;
+
 
 
 public class Main {
@@ -23,7 +22,6 @@ public class Main {
         Converter converter = new Converter();
         Distance distance = g.fromJson(new FileReader("./src/main/java/com/SysGears/test/index.json"), Distance.class);
 
-        BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
 
         validator.validUnit( "Unit?", distance.avalibleUnits);
         validator.validConvert_to("Convert to?", distance.avalibleUnits);
