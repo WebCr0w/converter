@@ -15,7 +15,7 @@ public class Converter {
 
         ArrayList<String> result = new ArrayList<>();
         Gson g = new Gson();
-        Distance distance = g.fromJson(new FileReader("./src/main/java/com/sysgears/converter/index.json"), Distance.class);
+        Distance distance = g.fromJson(new FileReader("./src/main/resources/index.json"), Distance.class);
 
 
         for (int i = 0; i < distance.dist.size(); i++){

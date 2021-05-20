@@ -20,7 +20,7 @@ public class Main {
         Gson g = new Gson();
         Validator validator = new Validator();
         Converter converter = new Converter();
-        Distance distance = g.fromJson(new FileReader("./src/main/java/com/sysgears/converter/index.json"), Distance.class);
+        Distance distance = g.fromJson(new FileReader("./src/main/resources/index.json"), Distance.class);
 
 
         validator.validUnit( "Unit?", distance.avalibleUnits);
