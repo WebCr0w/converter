@@ -1,4 +1,4 @@
-package com.SysGears.test;
+package com.sysgears.converter;
 
 
 import com.google.gson.Gson;
@@ -20,14 +20,14 @@ public class Main {
         Gson g = new Gson();
         Validator validator = new Validator();
         Converter converter = new Converter();
-        Distance distance = g.fromJson(new FileReader("./src/main/java/com/SysGears/test/index.json"), Distance.class);
+        Distance distance = g.fromJson(new FileReader("./src/main/java/com/sysgears/converter/index.json"), Distance.class);
 
 
         validator.validUnit( "Unit?", distance.avalibleUnits);
         validator.validConvert_to("Convert to?", distance.avalibleUnits);
         validator.validValue("Value?");
 
-        System.out.println(converter.convert(validator.parameter, validator.parameter2, Integer.valueOf(validator.value)));
+        System.out.println(converter.convert(validator.unit, validator.convertTo, Integer.valueOf(validator.value)));
 
 
 

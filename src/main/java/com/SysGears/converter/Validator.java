@@ -1,4 +1,4 @@
-package com.SysGears.test;
+package com.sysgears.converter;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,26 +7,26 @@ import java.util.List;
 
 public class Validator {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
-    public String parameter;
-    public String parameter2;
+    public String unit;
+    public String convertTo;
     public String value;
     public void validUnit(String message, List<String> base) throws IOException {
         while(true){
             System.out.println(message);
-            parameter = reader.readLine();
-            if (base.contains(parameter)){
+            unit = reader.readLine();
+            if (base.contains(unit)){
                 break;
-            } else if (parameter.equals("exit")) System.exit(0);
+            } else if (unit.equals("exit")) System.exit(0);
             else System.out.println("Incorrect value");
         }
     }
     public void validConvert_to(String message, List<String> base) throws IOException {
         while(true){
             System.out.println(message);
-            parameter2 = reader.readLine();
-            if (base.contains(parameter2) && !parameter.equals(parameter2) ){
+            convertTo = reader.readLine();
+            if (base.contains(convertTo) && !unit.equals(convertTo) ){
                 break;
-            } else if (parameter2.equals("exit")) System.exit(0);
+            } else if (convertTo.equals("exit")) System.exit(0);
             else System.out.println("Incorrect value");
         }
     }
